@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'untitled-serif';
+  src: url('/fonts/GT-Alpina-Bold.woff2');
+}
+
+@font-face {
+  font-family: 'untitled-sans';
+  src: url('/fonts/UntitledSans-Regular.woff');
+  src: url('/fonts/UntitledSans-Regular.woff2');
+}
+
+body {
+  font-family: 'untitled-sans', sans-serif;
+  @apply bg-white;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'untitled-serif';
+}
+
+p {
+  widows: 3;
+}
+
+.switch-inner {
+  margin: 2px 2px 0 2px;
+  padding: 6px;
+  width: calc(50% - 5px);
+  display: block;
+  text-align: center;
+}
+
+.markdown-content p {
+  margin-top: 1rem;
+}
+
+.markdown-content p img {
+  margin-top: 2rem;
+}
+
+.custom-box-shadow {
+  box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 32px rgba(17,17,26,0.05);
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arrow {
+  margin-left: calc(50% - 80px)
+}
+
+.next-project {
+  cursor: pointer;
+}
